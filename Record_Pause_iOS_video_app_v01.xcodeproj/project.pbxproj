@@ -13,6 +13,7 @@
 		7E58BBA52190A24100886893 /* Record_Pause_iOS_video_app_v01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E58BBA32190A24100886893 /* Record_Pause_iOS_video_app_v01.xcdatamodeld */; };
 		7E58BBA72190A24200886893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E58BBA62190A24200886893 /* Assets.xcassets */; };
 		7E58BBAA2190A24200886893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E58BBA82190A24200886893 /* LaunchScreen.storyboard */; };
+		7E58BBB22190AADF00886893 /* PreviewAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58BBB12190AADF00886893 /* PreviewAreaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7E58BBA62190A24200886893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E58BBA92190A24200886893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E58BBAB2190A24200886893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E58BBB12190AADF00886893 /* PreviewAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewAreaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7E58BB9C2190A24100886893 /* AppDelegate.swift */,
 				7E58BB9E2190A24100886893 /* ViewController.swift */,
 				7E58BBA02190A24100886893 /* Main.storyboard */,
+				7E58BBB12190AADF00886893 /* PreviewAreaView.swift */,
 				7E58BBA62190A24200886893 /* Assets.xcassets */,
 				7E58BBA82190A24200886893 /* LaunchScreen.storyboard */,
 				7E58BBAB2190A24200886893 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				7E58BB9F2190A24100886893 /* ViewController.swift in Sources */,
 				7E58BB9D2190A24100886893 /* AppDelegate.swift in Sources */,
+				7E58BBB22190AADF00886893 /* PreviewAreaView.swift in Sources */,
 				7E58BBA52190A24100886893 /* Record_Pause_iOS_video_app_v01.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

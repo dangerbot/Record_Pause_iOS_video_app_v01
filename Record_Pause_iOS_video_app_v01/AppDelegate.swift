@@ -100,5 +100,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-}
+    
+    
+    // --------------------
+} // END class AppDelegate:
 
