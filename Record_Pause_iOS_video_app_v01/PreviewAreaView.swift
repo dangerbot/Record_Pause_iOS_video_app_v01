@@ -5,6 +5,8 @@
 //  Created by Steve on 11/5/18.
 //  Copyright © 2018 SteveAndTheDogs. All rights reserved.
 //
+// Code was created by S.Black
+// From the AVCam Swift demo code provided by Apple
 
 import Foundation
 import UIKit

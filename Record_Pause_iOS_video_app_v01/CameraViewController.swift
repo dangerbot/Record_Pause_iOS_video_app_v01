@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class ViewController: UIViewController {
+class CameraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

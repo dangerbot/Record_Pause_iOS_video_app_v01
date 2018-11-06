@@ -13,7 +13,6 @@ import os.log
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
 
@@ -22,6 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         os_log("AppDelegate. application(didFinishLaunchingWithOptions)", log: OSLog.default, type: .info)
         return true
     }
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        os_log("AppDelegate. application(willFinishLaunchingWithOptions)", log: OSLog.default, type: .info)
+        return true
+    }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         os_log("AppDelegate. applicationWillResignActive()", log: OSLog.default, type: .info)
