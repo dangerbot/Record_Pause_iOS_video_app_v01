@@ -14,7 +14,7 @@ import AVFoundation
 import os.log
 
 
-class PreviewAreaView: UIView {
+class PreviewView: UIView {
     
     
     var videoPreviewLayer: AVCaptureVideoPreviewLayer {

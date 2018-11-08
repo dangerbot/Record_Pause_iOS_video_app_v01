@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E25CC1C2193B93400445322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E25CC1B2193B93400445322 /* Main.storyboard */; };
+		7E25CC1E2193C9D600445322 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25CC1D2193C9D600445322 /* PhotoCaptureDelegate.swift */; };
 		7E58BB9D2190A24100886893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58BB9C2190A24100886893 /* AppDelegate.swift */; };
 		7E58BB9F2190A24100886893 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58BB9E2190A24100886893 /* CameraViewController.swift */; };
-		7E58BBA22190A24100886893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E58BBA02190A24100886893 /* Main.storyboard */; };
 		7E58BBA52190A24100886893 /* Record_Pause_iOS_video_app_v01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E58BBA32190A24100886893 /* Record_Pause_iOS_video_app_v01.xcdatamodeld */; };
 		7E58BBA72190A24200886893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E58BBA62190A24200886893 /* Assets.xcassets */; };
 		7E58BBAA2190A24200886893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E58BBA82190A24200886893 /* LaunchScreen.storyboard */; };
-		7E58BBB22190AADF00886893 /* PreviewAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58BBB12190AADF00886893 /* PreviewAreaView.swift */; };
+		7E58BBB22190AADF00886893 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58BBB12190AADF00886893 /* PreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E25CC1B2193B93400445322 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7E25CC1D2193C9D600445322 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		7E58BB992190A24100886893 /* Record_Pause_iOS_video_app_v01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Record_Pause_iOS_video_app_v01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E58BB9C2190A24100886893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E58BB9E2190A24100886893 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		7E58BBA12190A24100886893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E58BBA42190A24100886893 /* Record_Pause_iOS_video_app_v01.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Record_Pause_iOS_video_app_v01.xcdatamodel; sourceTree = "<group>"; };
 		7E58BBA62190A24200886893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E58BBA92190A24200886893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E58BBAB2190A24200886893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E58BBB12190AADF00886893 /* PreviewAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewAreaView.swift; sourceTree = "<group>"; };
+		7E58BBB12190AADF00886893 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				7E58BB9C2190A24100886893 /* AppDelegate.swift */,
+				7E58BBB12190AADF00886893 /* PreviewView.swift */,
 				7E58BB9E2190A24100886893 /* CameraViewController.swift */,
-				7E58BBA02190A24100886893 /* Main.storyboard */,
-				7E58BBB12190AADF00886893 /* PreviewAreaView.swift */,
+				7E25CC1D2193C9D600445322 /* PhotoCaptureDelegate.swift */,
+				7E25CC1B2193B93400445322 /* Main.storyboard */,
 				7E58BBA62190A24200886893 /* Assets.xcassets */,
 				7E58BBA82190A24200886893 /* LaunchScreen.storyboard */,
 				7E58BBAB2190A24200886893 /* Info.plist */,
@@ -130,7 +133,7 @@
 			files = (
 				7E58BBAA2190A24200886893 /* LaunchScreen.storyboard in Resources */,
 				7E58BBA72190A24200886893 /* Assets.xcassets in Resources */,
-				7E58BBA22190A24100886893 /* Main.storyboard in Resources */,
+				7E25CC1C2193B93400445322 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +146,8 @@
 			files = (
 				7E58BB9F2190A24100886893 /* CameraViewController.swift in Sources */,
 				7E58BB9D2190A24100886893 /* AppDelegate.swift in Sources */,
-				7E58BBB22190AADF00886893 /* PreviewAreaView.swift in Sources */,
+				7E58BBB22190AADF00886893 /* PreviewView.swift in Sources */,
+				7E25CC1E2193C9D600445322 /* PhotoCaptureDelegate.swift in Sources */,
 				7E58BBA52190A24100886893 /* Record_Pause_iOS_video_app_v01.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7E58BBA02190A24100886893 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E58BBA12190A24100886893 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7E58BBA82190A24200886893 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC94Y4KD6H;
 				INFOPLIST_FILE = Record_Pause_iOS_video_app_v01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC94Y4KD6H;
 				INFOPLIST_FILE = Record_Pause_iOS_video_app_v01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
