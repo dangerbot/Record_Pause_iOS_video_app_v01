@@ -168,7 +168,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     override var shouldAutorotate: Bool {
         // Disable autorotation of the interface when recording is in progress.
         if let movieFileOutput = movieFileOutput {
-            os_log("CameraViewController. var shouldAutorotate Bool", log: OSLog.default, type: .info)
+            os_log("CameraViewController. var shouldAutorotate Bool:", log: OSLog.default, type: .info)
             return !movieFileOutput.isRecording
         }
         return true
@@ -845,10 +845,16 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
                     from connections: [AVCaptureConnection],
                     error: Error?) {
         os_log("CameraViewController. fileOutput(DidFinishRecording)", log: OSLog.default, type: .info)
+        
+        
+        
+        //
         // Note: Since we use a unique file path for each recording, a new recording won't overwrite a recording mid-save.
         func cleanup() {
             os_log("CameraViewController. fileOutput(DidFinishRecording).cleanup()", log: OSLog.default, type: .info)
             let path = outputFileURL.path
+            print("path = outputFileURL.path: \(path)")
+            print(path)
             if FileManager.default.fileExists(atPath: path) {
                 do {
                     try FileManager.default.removeItem(atPath: path)
@@ -863,6 +869,9 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
                 }
             }
         } // END func cleanup()
+        
+        
+        
         //
         var success = true
         if error != nil {
@@ -874,6 +883,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
             PHPhotoLibrary.requestAuthorization { status in
                 if status == .authorized {
                     // Save the movie file to the photo library and cleanup.
+                    print("Save the movie file to the photo library and cleanup.")
                     PHPhotoLibrary.shared().performChanges({
                         let options = PHAssetResourceCreationOptions()
                         options.shouldMoveFile = true
